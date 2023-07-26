@@ -24,6 +24,7 @@
 .content1{
   background-color:#B2BEB5;
   flex: 1;
+  width: 35%;
 }
 .content2{
   background-color: white;
