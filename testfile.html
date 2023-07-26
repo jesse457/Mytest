@@ -1,40 +1,162 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Progress Bar Example</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hello, World!</title>
   <style>
-   
+    *{
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+    }
+    .header{
+      background-color: black;
+      display: flex;
+      justify-content: end;
+    }
+    .mytxt{
+      width: 50%;
+    }
+    .mytxt h1{
+      color: white;
+      font-size: 50px;
+    }
+    .mytxt p{
+      color: whitesmoke;
+    }
+    .container{
+      display: flex;
+      height: 100vh;
+    }
+    .content1{
+      background-color:#B2BEB5;
+      flex: 1;
+      width: 35%;
+    }
+    .content2{
+      background-color: white;
+      flex: 2;
+    }
+    .content1 img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin-top: -80px;
+      margin-left: 110px;
+      border: 5px solid white;
+      max-width: 100%;
+      max-height: 100%;
+      border-radius: 50%;
+      box-shadow: 0 0 20px #000000;
+    }
+    .content{
+      width: 100%;
+      margin-left: 100px;
+    }
+    .content h1{
+      font-weight: 100;
+    }
+    @media (min-width: 576px) and (max-width: 992px) {
+      .header img {
+        max-width: 100%;
+        height: auto;
+      }
+      .content1 {
+        padding: 40px;
+      }
+      .comp p, .comp .progress {
+        margin: 0 10px;
+      }
+    }
+    @media (max-width: 576px) {
+      .mytxt {
+        text-align: center;
+      }
+      .header img {
+        max-width: 100%;
+        height: auto;
+      }
+      .content1 {
+        padding: 20px;
+      }
+      .comp {
+        flex-direction: column;
+      }
+      .comp p, .comp .progress {
+        margin: 0 auto;
+      }
+      .content1 img {
+        width: 150px;
+        height: 150px;
+        border-width: 3px;
+        margin-top: -75px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .content {
+        margin: 20px;
+      }
+    }
+    @media (min-width: 992px) {
+      .content1 {
+        padding: 60px;
+      }
+      .comp p, .comp .progress {
+        margin: 10px;
+      }
+    }
   </style>
-  <link rel="stylesheet" href="bootstrap-5.3.1-dist/css/bootstrap.css">
 </head>
-<body >
-    <div class="d-flex">
-      <div class="w-50">
-            <div class="progress mb-5 mx-5 w-25">
-              <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" ></div>
-            </div>
-            <div class="progress mb-5 mx-5 w-25">
-              <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" ></div>
-            </div>
-            <div class="progress mb-5 mx-5 w-25">
-              <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" ></div>
-            </div>
-      </div>
-      <div class="d-flex flex-column w-">
-          <div class="progress mb-5 mx-5 w-25">
-              <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" ></div>
-            </div>
-            <div class="progress mb-5 mx-5 w-25">
-              <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" ></div>
-            </div>
-            <div class="progress mb-5 mx-5 w-25">
-              <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" ></div>
-            </div>
-      </div>     
+<body>
+  <section class="header">
+    <div class="mytxt">
+      <h1>OKIWA JESSE</h1>
+      <p>web developer</p>
     </div>
-    
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <img src="548.jpg">
+  </section>
+  <section class="content1">
+    <div class="content">
+      <h1>CONTACT</h1>
+      <p>+237 652 414 903</p>
+      <h1>Email</h1>
+      <p>okiwajesse1@gmail.com</p>
+    </div>
+    <div class="comp d-flex">
+      <div class="w-50">
+        <p class="fw-bold">Html</p>
+        <div class="progress mb-3">
+          <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0"></div>
+        </div>
+        <p class="fw-bold">CSS</p>
+        <div class="progress mb-3">
+          <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0"></div>
+        </div>
+        <p class="fw-bold">Python</p>
+        <div class="progress mb-3">
+          <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0"></div>
+        </div>
+      </div>
+      <div class="w-50">
+        <p class="fw-bold">C</p>
+        <div class="progress-bar mb-3">
+          <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0"></div>
+        </div>
+        <p class="fw-bold">javascript</p>
+        <div class="progress-bar mb-3">
+          <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0"></div>
+        </div>
+        <p class="fw-bold">Wordpress</p>
+        <div class="progress-bar mb-3">
+          <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="content2">
+    <div class="mytxt">
+      <h1>Hello, World!</h1>
+    </div>
+  </section>
 </body>
 </html>
