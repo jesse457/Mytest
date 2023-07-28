@@ -9,8 +9,9 @@
 .header{
   background-color: black;
   display: flex;
+  height: 100%;
+  width: 100%;
   justify-content: end;
-  height: 150px;
 }
 .mytxt{
   width: 50%;
@@ -21,7 +22,7 @@
   font-size: 50px;
 }
 .mytxt p{
-  color: whitesmoke;
+  color: rgba(184, 184, 184, 0.96);
 }
 .cont{
   display: flex;
@@ -29,14 +30,16 @@
 }
 .content1{
   background-color:whitesmoke;
-  height: fit-content;
-  width: 35%;
+  flex: 0.3;
 }
 .content2{
   background-color:white;
-  width:75%;
+  flex: 0.7;
+  ;
 }
-
+.user{
+  display: flex;
+}
 
 .content1 img {
   width: 200px;
@@ -44,7 +47,7 @@
   border-radius: 50%;
   overflow: hidden;
   margin-top: -90px;
-  margin-left: 110px;
+  margin-left: 50px;
   border: 5px solid white;
   max-width: 100%;
   max-height: 100%;
@@ -54,41 +57,13 @@
 .content{
   
   width: 100%;
-  margin-left: 100px;
+  margin-left: 50px;
 }
 .content h1{
 font-weight: 100;
 }
-@media (min-width: 576px) and (max-width: 992px) {
-  .header img {
-    max-width: 100%;
-    height: auto;
-  }
-  .content1 {
-    padding: 40px;
-  }
-  .comp p, .comp .progress {
-    margin: 0 10px;
-  }
-}
-@media (max-width: 576px) {
-  .mytxt {
-    text-align: center;
-  }
-  .header img {
-    max-width: 100%;
-    height: auto;
-  }
-  .content1 {
-    padding: 20px;
-  }
-  .comp {
-    flex-direction: column;
-  }
-  .comp p, .comp .progress {
-    margin: 0 auto;
-  }
-}
+
+
 .name{
   margin-right: 100px;
 }
@@ -110,3 +85,4 @@ font-weight: 100;
   align-items: center;
   height:100px;
 }
+
